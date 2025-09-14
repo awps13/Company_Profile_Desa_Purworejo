@@ -1,103 +1,262 @@
+"use client";
+
 import Image from "next/image";
+import Hero from "@/components/Hero";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+	const fadeInUp = {
+		hidden: { opacity: 0, y: 60 },
+		visible: { opacity: 1, y: 0 },
+	};
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	const staggerContainer = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: {
+				delayChildren: 0.3,
+				staggerChildren: 0.2,
+			},
+		},
+	};
+
+	return (
+		<div>
+			{/* Hero Section */}
+			<Hero />
+
+			{/* About Section */}
+			<section id="profile" className="py-16 bg-white">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<motion.div
+						className="text-center mb-12"
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}
+						variants={fadeInUp}
+						transition={{ duration: 0.6 }}>
+						<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+							Tentang Desa Purworejo
+						</h2>
+						<p className="text-lg text-gray-600 max-w-3xl mx-auto">
+							Desa Purworejo adalah sebuah desa yang terletak di
+							Kecamatan Ngantang, Kabupaten Malang, Jawa Timur
+							dengan kode pos 65392.
+						</p>
+					</motion.div>
+
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+						<motion.div
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true }}
+							variants={fadeInUp}
+							transition={{ duration: 0.6, delay: 0.2 }}>
+							<h3 className="text-2xl font-semibold text-gray-900 mb-4">
+								Keindahan Alam yang Memukau
+							</h3>
+							<p className="text-gray-600 mb-6 leading-relaxed">
+								Desa Purworejo dikelilingi oleh pemandangan alam
+								yang indah, dengan hamparan sawah hijau,
+								perbukitan yang menawan, dan udara yang sejuk.
+								Desa ini menawarkan kehidupan pedesaan yang
+								damai dan harmonis.
+							</p>
+							<p className="text-gray-600 leading-relaxed">
+								Masyarakat desa yang ramah dan gotong royong
+								menjadikan Purworejo sebagai tempat yang ideal
+								untuk wisata alam dan budaya. Berbagai potensi
+								ekonomi, budaya, dan pariwisata terus
+								dikembangkan untuk kesejahteraan masyarakat.
+							</p>
+						</motion.div>
+
+						<motion.div
+							className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg"
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true }}
+							variants={fadeInUp}
+							transition={{ duration: 0.6, delay: 0.4 }}
+							whileHover={{ scale: 1.05 }}>
+							<Image
+								src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+								alt="Indonesian Village Scene"
+								fill
+								className="object-cover"
+							/>
+						</motion.div>
+					</div>
+				</div>
+			</section>
+
+			{/* Tourism Highlights */}
+			<section className="py-16 bg-gray-50">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<motion.div
+						className="text-center mb-12"
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}
+						variants={fadeInUp}
+						transition={{ duration: 0.6 }}>
+						<h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+							Daya Tarik Wisata
+						</h2>
+						<p className="text-lg text-gray-600 max-w-3xl mx-auto">
+							Jelajahi keindahan dan kekayaan budaya Desa
+							Purworejo melalui berbagai destinasi wisata yang
+							menawan.
+						</p>
+					</motion.div>
+
+					<motion.div
+						className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+						variants={staggerContainer}
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}>
+						{/* Tourism Card 1 */}
+						<motion.div
+							className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
+							variants={fadeInUp}
+							whileHover={{ y: -8 }}>
+							<div className="relative h-48 overflow-hidden">
+								<Image
+									src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3"
+									alt="Rice Fields"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-300"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+							</div>
+							<div className="p-6">
+								<h3 className="text-xl font-semibold text-gray-900 mb-2">
+									Hamparan Sawah
+								</h3>
+								<p className="text-gray-600 text-sm">
+									Nikmati pemandangan sawah hijau yang
+									membentang luas dengan udara segar
+									pegunungan.
+								</p>
+							</div>
+						</motion.div>
+
+						{/* Tourism Card 2 */}
+						<motion.div
+							className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
+							variants={fadeInUp}
+							whileHover={{ y: -8 }}>
+							<div className="relative h-48 overflow-hidden">
+								<Image
+									src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+									alt="Traditional House"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-300"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+							</div>
+							<div className="p-6">
+								<h3 className="text-xl font-semibold text-gray-900 mb-2">
+									Wisata Budaya
+								</h3>
+								<p className="text-gray-600 text-sm">
+									Jelajahi rumah tradisional dan kebudayaan
+									lokal yang masih terjaga dengan baik.
+								</p>
+							</div>
+						</motion.div>
+
+						{/* Tourism Card 3 */}
+						<motion.div
+							className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
+							variants={fadeInUp}
+							whileHover={{ y: -8 }}>
+							<div className="relative h-48 overflow-hidden">
+								<Image
+									src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+									alt="Mountain View"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-300"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+							</div>
+							<div className="p-6">
+								<h3 className="text-xl font-semibold text-gray-900 mb-2">
+									Pemandangan Gunung
+								</h3>
+								<p className="text-gray-600 text-sm">
+									Saksikan keindahan sunrise dan sunset dari
+									ketinggian dengan panorama yang menakjubkan.
+								</p>
+							</div>
+						</motion.div>
+
+						{/* Tourism Card 4 */}
+						<motion.div
+							className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
+							variants={fadeInUp}
+							whileHover={{ y: -8 }}>
+							<div className="relative h-48 overflow-hidden">
+								<Image
+									src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+									alt="Local Products"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-300"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+							</div>
+							<div className="p-6">
+								<h3 className="text-xl font-semibold text-gray-900 mb-2">
+									Produk Lokal
+								</h3>
+								<p className="text-gray-600 text-sm">
+									Cicipi dan beli langsung produk unggulan
+									desa seperti bawang merah dan hasil
+									pertanian lainnya.
+								</p>
+							</div>
+						</motion.div>
+					</motion.div>
+				</div>
+			</section>
+
+			{/* Call to Action */}
+			<section className="py-16 bg-gradient-to-r from-green-600 to-emerald-600">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+					<motion.div
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}
+						variants={fadeInUp}
+						transition={{ duration: 0.6 }}>
+						<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+							Kunjungi Desa Purworejo
+						</h2>
+						<p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+							Rasakan kehangatan masyarakat desa dan keindahan
+							alam yang tak terlupakan
+						</p>
+						<div className="flex flex-col sm:flex-row gap-4 justify-center">
+							<motion.a
+								href="/transportasi"
+								className="bg-white text-green-600 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg"
+								whileHover={{ scale: 1.05, y: -2 }}
+								whileTap={{ scale: 0.95 }}>
+								Info Transportasi
+							</motion.a>
+							<motion.a
+								href="/pelayanan"
+								className="border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-all duration-300"
+								whileHover={{ scale: 1.05, y: -2 }}
+								whileTap={{ scale: 0.95 }}>
+								Layanan Desa
+							</motion.a>
+						</div>
+					</motion.div>
+				</div>
+			</section>
+		</div>
+	);
 }
