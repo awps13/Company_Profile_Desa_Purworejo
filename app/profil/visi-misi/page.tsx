@@ -22,9 +22,7 @@ export default function VisiMisiPage() {
 						</h2>
 						<div className="bg-green-50 p-6 rounded-lg">
 							<p className="text-lg text-gray-800 leading-relaxed text-center italic">
-								&quot;Mewujudkan Desa Purworejo yang Maju,
-								Mandiri, dan Sejahtera Berdasarkan Potensi Alam
-								dan Budaya Lokal&quot;
+								&quot;TERWUJUDNYA MASYARAKAT DESA PURWOREJO YANG SEJAHTERA DAN MANDIRI TERDEPAN DI BIDANG PERTANIAN&quot;
 							</p>
 						</div>
 					</div>
@@ -40,10 +38,7 @@ export default function VisiMisiPage() {
 									1
 								</div>
 								<p className="text-gray-700 leading-relaxed">
-									Mengembangkan potensi ekonomi desa melalui
-									pertanian berkelanjutan, khususnya budidaya
-									bawang merah dan tanaman hortikultura
-									lainnya.
+									Terwujudnya aparatur Pemerintah Desa yang mempunyai kapasitas dan kemampuan dalam melayani masyarakat sehingga penyelenggaraan pemerintah desa menjadi efisien dan efektif
 								</p>
 							</div>
 
@@ -52,9 +47,7 @@ export default function VisiMisiPage() {
 									2
 								</div>
 								<p className="text-gray-700 leading-relaxed">
-									Meningkatkan kualitas sumber daya manusia
-									melalui pendidikan, pelatihan, dan
-									pemberdayaan masyarakat.
+									Terwujudnya pelayanan dasar yang memadahi dan berkualitas, meliputi pendidikan, kesehatan, dan tempat tinggal memadahi (papan).
 								</p>
 							</div>
 
@@ -63,9 +56,7 @@ export default function VisiMisiPage() {
 									3
 								</div>
 								<p className="text-gray-700 leading-relaxed">
-									Membangun infrastruktur desa yang mendukung
-									kemajuan ekonomi dan kesejahteraan
-									masyarakat.
+									Tersedianya Infrastruktur perdesaan yang mampu mendukung aktifitas ekonomi, pertanian, sosial dan budaya
 								</p>
 							</div>
 
@@ -74,9 +65,7 @@ export default function VisiMisiPage() {
 									4
 								</div>
 								<p className="text-gray-700 leading-relaxed">
-									Mengembangkan sektor pariwisata berbasis
-									alam dan budaya lokal untuk meningkatkan
-									pendapatan masyarakat.
+									Terciptanya kondisi kegiatan ekonomi yang berkualitas dan berkelanjutan yang dapat dinikmati oleh seluruh masyarakat, berdaya saing, pengembangan ekonomi non-pertanian serta penerapan teknologi tepat guna, sebagai upaya pengembangan ekonomi lokal Desa
 								</p>
 							</div>
 
@@ -85,9 +74,7 @@ export default function VisiMisiPage() {
 									5
 								</div>
 								<p className="text-gray-700 leading-relaxed">
-									Melestarikan budaya dan tradisi lokal
-									sebagai identitas desa yang unik dan
-									berharga.
+									Terwujudnya ekonomi perdesaan berdaya saing tinggi melalui usaha pertanian, petemakan, jasa dan usaha industri skala kecil perseorangan maupun kelompok.
 								</p>
 							</div>
 
@@ -96,16 +83,38 @@ export default function VisiMisiPage() {
 									6
 								</div>
 								<p className="text-gray-700 leading-relaxed">
-									Menyelenggarakan pemerintahan desa yang
-									transparan, akuntabel, dan partisipatif
-									untuk kepentingan bersama.
+									Terwujudnya pengelolaan sumberdaya daya alam secara bertanggungjawab dan penataan lingkungan hidup untuk kemajuan desa
+								</p>
+							</div>
+							<div className="flex items-start space-x-4">
+								<div className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-semibold">
+									7
+								</div>
+								<p className="text-gray-700 leading-relaxed">
+									Terciptanya ketertiban dan ketentraman masyarakat desa, melalui pembinaan dan pemberdayaan masyarakat
+								</p>
+							</div>
+							<div className="flex items-start space-x-4">
+								<div className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-semibold">
+									8
+								</div>
+								<p className="text-gray-700 leading-relaxed">
+									Terciptanya masyarakat berkesenian dan melestarikan budaya
+								</p>
+							</div>
+							<div className="flex items-start space-x-4">
+								<div className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-semibold">
+									9
+								</div>
+								<p className="text-gray-700 leading-relaxed">
+									Tersedianya kader desa yang tangguh melalui pembinaan kepada generasi muda
 								</p>
 							</div>
 						</div>
 					</div>
 
 					{/* Tujuan Section */}
-					<div className="mt-12">
+					{/* <div className="mt-12">
 						<h2 className="text-2xl font-semibold text-green-600 mb-6">
 							Tujuan
 						</h2>
@@ -141,7 +150,7 @@ export default function VisiMisiPage() {
 								</li>
 							</ul>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

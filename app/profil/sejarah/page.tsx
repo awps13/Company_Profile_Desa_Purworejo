@@ -39,22 +39,24 @@ export default function SejarahPage() {
 					<div className="space-y-8">
 						<div className="border-l-4 border-green-600 pl-6">
 							<h3 className="text-xl font-semibold text-gray-900 mb-2">
-								Era Kerajaan (Abad 15-17)
+								Asal Usul Desa
 							</h3>
 							<p className="text-gray-700 leading-relaxed">
-								Pada masa kerajaan Majapahit dan Mataram,
-								wilayah yang sekarang menjadi Desa Purworejo
-								sudah mulai dihuni oleh masyarakat Jawa. Nama
-								Purworejo diperkirakan berasal dari kata
-								&quot;Purwo&quot; yang berarti awal atau
-								pertama, dan &quot;Rejo&quot; yang berarti
-								sejahtera.
+								Menurut informasi yang kami dapatkan dari para sesepuh desa bahwa desa Purworejo didirikan oleh Pungawa Mataram yang melarikan diri akibat runtuhnya kerajaan tersebut Orang yang datang ke Purworejo bernama:
+								<br />
+								1. Ki Ageng Slamet / Ki Ageng Poncoyudho / Ki Ageng Gambuhan
+								<br />
+								2. Ki Ageng Noyo
+								<br />
+								3. Ki Ageng Poncosumo
+								<br />
+								4. Nyai Ranti
 							</p>
 						</div>
 
 						<div className="border-l-4 border-green-600 pl-6">
 							<h3 className="text-xl font-semibold text-gray-900 mb-2">
-								Masa Kolonial Belanda (Abad 18-19)
+								Sejarah Kepemimpinan Desa
 							</h3>
 							<p className="text-gray-700 leading-relaxed">
 								Selama masa kolonial, Desa Purworejo menjadi
