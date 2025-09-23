@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export default function PotensiPage() {
 	const fadeInUp = {
-		hidden: { opacity: 0, y: 60 },
+		hidden: { opacity: 0, y: 40 },
 		visible: { opacity: 1, y: 0 },
-	};
+	} as Variants;
 
 	const staggerContainer = {
 		hidden: { opacity: 0 },
@@ -18,46 +18,38 @@ export default function PotensiPage() {
 				staggerChildren: 0.2,
 			},
 		},
-	};
+	} as Variants;
 
-	const economicPotentials = [
-		{
-			title: "Budidaya Bawang Merah",
-			image: "https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
-			description:
-				"Komoditas unggulan desa dengan kualitas terbaik. Bawang merah Purworejo dikenal hingga ke luar daerah dan menjadi sumber pendapatan utama petani.",
-			stats: [
-				"Luas tanam: ±200 hektar",
-				"Produktivitas: 12-15 ton/ha",
-				"Masa tanam: 3x setahun",
-			],
-			color: "from-red-500 to-orange-500",
-		},
-		{
-			title: "Pertanian Padi",
-			image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3",
-			description:
-				"Sawah irigasi yang menghasilkan beras berkualitas tinggi dengan sistem pengairan tradisional yang masih terjaga.",
-			stats: [
-				"Luas sawah: ±150 hektar",
-				"Produktivitas: 6-7 ton/ha",
-				"Masa tanam: 2x setahun",
-			],
-			color: "from-green-500 to-emerald-500",
-		},
-		{
-			title: "Peternakan Sapi",
-			image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3",
-			description:
-				"Peternakan sapi potong dan perah yang dikelola oleh kelompok tani ternak dengan sistem kandang komunal.",
-			stats: [
-				"Populasi: ±300 ekor",
-				"Jenis: Sapi potong & perah",
-				"Kelompok ternak: 5 unit",
-			],
-			color: "from-amber-500 to-yellow-500",
-		},
-	];
+const economicPotentials = [
+  {
+    title: "Budidaya Bawang Merah",
+    image:
+      "https://s3-publishing-cmn-svc-prd.s3.ap-southeast-1.amazonaws.com/article/tpqx_7Ik9yLWFVOeJTs4W/original/052222900_1607682083-Manfaat-Bawang-Merah_-Antialergi-hingga-Menurunkan-Risiko-Kanker-shutterstock_1724962108.jpg",
+    description:
+      "Komoditas unggulan desa dengan kualitas terbaik. Bawang merah Purworejo dikenal hingga ke luar daerah dan menjadi sumber pendapatan utama petani.",
+    stats: [],
+    color: "from-gray-400/50 to-gray-600/50",
+  },
+  {
+    title: "Kerupuk Lempeng",
+    image:
+      "https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/882/2023/09/13/c5ce8ff2-3b42-47cd-b210-b4d9cd1d4c95-3109086727.jpeg",
+    description:
+      "Kerupuk lempeng berasal dari adonan yang terbuat dari berbagai bahan seperti beras, tepung tapioka (kanji), dan bumbu-bumbu seperti garam, bawang putih, bawang merah, dan ketumbar.",
+    stats: [],
+    color: "from-gray-400/50 to-gray-600/50",
+  },
+  {
+    title: "Susu Sapi Perah",
+    image:
+      "https://assetd.kompas.id/fThJDuspzDcte5vhE9K1T8uehEw=/fit-in/1024x720/filters:format(webp):quality(80):watermark(https://cdn-content.kompas.id/umum/kompas_main_logo.png,-16p,-13p,0)/https://inr-production-content-bucket.s3.ap-southeast-1.amazonaws.com/INR_PRODUCTION/photo/pre/2022/06/03/881031cb-3700-431b-94e6-0c5d5df3b510_jpg.jpg",
+    description:
+      "Susu perah adalah produk dari sapi, kambing, atau kerbau yang dihasilkan melalui pemerahan dan menjadi komoditas bernilai tinggi karena banyak digunakan sebagai bahan baku industri makanan dan minuman.",
+    stats: [],
+    color: "from-gray-400/50 to-gray-600/50",
+  },
+];
+
 
 	const culturalPotentials = [
 		{
@@ -92,25 +84,25 @@ export default function PotensiPage() {
 
 	const tourismPotentials = [
 		{
-			title: "Wisata Alam Sawah",
-			image: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+			title: "Sumber Seger Waras",
+			image: "https://lh3.googleusercontent.com/geougc-cs/AB3l90DV8CSszSrXX-hu_f_sgT9pb7bwazHPgTiFNl5Sw5zPGuhN7ZMWT8emOgye82pUX5ggHDmvd6ddLMySFTUvTkV0oAfBObT703PovQ5layTaSHf12XKjqeJThkJ8ZqN4zmHSeSEl",
 			description:
-				"Hamparan sawah hijau dengan latar belakang pegunungan yang menawarkan pemandangan indah dan udara segar.",
-			color: "from-green-400 to-emerald-500",
+				"Sumber Seger Waras di Desa Purworejo, Ngantang, Malang adalah sumber air alami sekaligus pemandian alam yang sejuk dan asri, dikelilingi pepohonan rindang.",
+			color: "from-gray-400/50 to-gray-600/50",
 		},
 		{
-			title: "Wisata Agro",
-			image: "https://images.unsplash.com/photo-1530023367847-a683933f4172?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+			title: "Pendakian Gunung Kawinanjang Via Purworejo",
+			image: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr6kwZzrGUhDDAC6JdXR0ReYrheETuIkOoSmBnPRrkq0SqCZHGflF52Bl-booasNniPIKC8Yi8u2jzZavalOFRY3d2WzwuS8NwBfesIN8ujcnBXvIcfMMpEhzxkLYFEZfsBzvPF=w408-h544-k-no",
 			description:
-				"Paket wisata edukasi pertanian dimana pengunjung dapat belajar tentang budidaya tanaman lokal.",
-			color: "from-amber-400 to-orange-500",
+				"Pendakian Gunung Kawinanjang via Purworejo menyajikan jalur asri dengan panorama indah dan tantangan seru bagi pendaki.",
+			color: "from-gray-400/50 to-gray-600/50",
 		},
 		{
-			title: "Tracking Desa",
+			title: "Berkebun",
 			image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
 			description:
-				"Jalur trekking mengelilingi desa dengan pemandangan alam yang menakjubkan dan udara pegunungan yang sejuk.",
-			color: "from-blue-400 to-indigo-500",
+				"Wisata berkebun berupa petik jeruk, alpukat, lombok, serta panen kubis) yang dapat dikunjungi pada bulan panen",
+			color: "from-gray-400/50 to-gray-600/50",
 		},
 	];
 
@@ -122,7 +114,7 @@ export default function PotensiPage() {
 					initial="hidden"
 					animate="visible"
 					variants={fadeInUp}
-					transition={{ duration: 0.6 }}>
+					transition={{ duration: 0.6  }}>
 					<h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-6">
 						Potensi Desa Purworejo
 					</h1>
@@ -157,9 +149,9 @@ export default function PotensiPage() {
 						{economicPotentials.map((potential, index) => (
 							<motion.div
 								key={index}
-								className="group bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500"
+								className="group bg-white rounded-3xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-500"
 								variants={fadeInUp}
-								whileHover={{ y: -10, scale: 1.02 }}>
+								whileHover={{ y: -10, scale: 1.02, rotate: 2 }}>
 								<div className="relative h-64 overflow-hidden">
 									<Image
 										src={potential.image}
@@ -199,7 +191,7 @@ export default function PotensiPage() {
 				</motion.section>
 
 				{/* Cultural Potential */}
-				<motion.section
+				{/* <motion.section
 					className="mb-20"
 					initial="hidden"
 					whileInView="visible"
@@ -238,7 +230,7 @@ export default function PotensiPage() {
 							</motion.div>
 						))}
 					</motion.div>
-				</motion.section>
+				</motion.section> */}
 
 				{/* Tourism Potential */}
 				<motion.section
@@ -309,24 +301,26 @@ export default function PotensiPage() {
 					</p>
 					<motion.div
 						className="flex flex-col sm:flex-row gap-4 justify-center"
-						variants={staggerContainer}
+						// variants={staggerContainer}
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true }}>
-						<motion.button
-							className="bg-white text-green-600 font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg"
-							variants={fadeInUp}
-							whileHover={{ scale: 1.05, y: -2 }}
-							whileTap={{ scale: 0.95 }}>
-							Hubungi Kami
-						</motion.button>
-						<motion.button
-							className="border-2 border-white text-white font-semibold py-4 px-8 rounded-full hover:bg-white hover:text-green-600 transition-all duration-300"
+							<a href="https://wa.me/6281249260276">
+								<motion.button
+									className="bg-white text-green-600 font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:cursor-pointer"
+									variants={fadeInUp}
+									whileHover={{ scale: 1.05, y: -2 }}
+									whileTap={{ scale: 0.95 }}>
+										Hubungi Kami
+								</motion.button>
+							</a>
+						{/* <motion.button
+							className="border-2 border-white text-white font-semibold py-4 px-8 rounded-full hover:bg-white hover:text-green-600 transition-all duration-300 hover:cursor-pointer"
 							variants={fadeInUp}
 							whileHover={{ scale: 1.05, y: -2 }}
 							whileTap={{ scale: 0.95 }}>
 							Pelajari Lebih Lanjut
-						</motion.button>
+						</motion.button> */}
 					</motion.div>
 				</motion.section>
 			</div>

@@ -16,7 +16,7 @@ export default function WilayahPage() {
 					</h1>
 
 					{/* Geographic Overview */}
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-center">
 						<div>
 							<h2 className="text-2xl font-semibold text-green-600 mb-4">
 								Informasi Geografis
@@ -57,7 +57,7 @@ export default function WilayahPage() {
 										Luas Wilayah:
 									</span>
 									<span className="text-gray-900">
-										±12,5 km²
+										312,050 Ha
 									</span>
 								</div>
 								<div className="flex justify-between items-center py-2">
@@ -65,7 +65,7 @@ export default function WilayahPage() {
 										Ketinggian:
 									</span>
 									<span className="text-gray-900">
-										800-1.200 mdpl
+										600 mdpl
 									</span>
 								</div>
 							</div>
@@ -73,10 +73,10 @@ export default function WilayahPage() {
 
 						<div className="relative h-64 lg:h-80 rounded-lg overflow-hidden">
 							<Image
-								src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop"
+								src="/peta.jpg"
 								alt="Village Landscape"
 								fill
-								className="object-cover"
+								className="object-cover "
 							/>
 						</div>
 					</div>
@@ -89,13 +89,10 @@ export default function WilayahPage() {
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 							<div className="bg-gray-50 p-6 rounded-lg">
 								<h3 className="text-lg font-semibold text-gray-900 mb-2">
-									Dusun I
-								</h3>
-								<p className="text-gray-600 mb-3">
-									Dusun Krajan
-								</p>
+									Dusun Pakan
+								</h3> 
 								<ul className="text-sm text-gray-700 space-y-1">
-									<li>• RT 01, 02, 03</li>
+									<li>• RT 01, 02, 03, 04, 05, 06, 07</li>
 									<li>• Pusat pemerintahan desa</li>
 									<li>• Pasar tradisional</li>
 								</ul>
@@ -103,13 +100,11 @@ export default function WilayahPage() {
 
 							<div className="bg-gray-50 p-6 rounded-lg">
 								<h3 className="text-lg font-semibold text-gray-900 mb-2">
-									Dusun II
+									Dusun Binangsri
 								</h3>
-								<p className="text-gray-600 mb-3">
-									Dusun Sawah
-								</p>
+								
 								<ul className="text-sm text-gray-700 space-y-1">
-									<li>• RT 04, 05, 06</li>
+									<li>• RT 08, 09, 10, 11, 12, 13, 14</li>
 									<li>• Area persawahan utama</li>
 									<li>• Sentra bawang merah</li>
 								</ul>
@@ -117,13 +112,22 @@ export default function WilayahPage() {
 
 							<div className="bg-gray-50 p-6 rounded-lg">
 								<h3 className="text-lg font-semibold text-gray-900 mb-2">
-									Dusun III
+									Dusun Jeruk
 								</h3>
-								<p className="text-gray-600 mb-3">
-									Dusun Gunung
-								</p>
+								
 								<ul className="text-sm text-gray-700 space-y-1">
-									<li>• RT 07, 08</li>
+									<li>• RT 15, 16, 17, 18, 19</li>
+									<li>• Area perbukitan</li>
+									<li>• Hutan produksi</li>
+								</ul>
+							</div>
+							<div className="bg-gray-50 p-6 rounded-lg">
+								<h3 className="text-lg font-semibold text-gray-900 mb-2">
+									Dusun Tokol
+								</h3>
+								
+								<ul className="text-sm text-gray-700 space-y-1">
+									<li>• RT 20, 21, 22, 23</li>
 									<li>• Area perbukitan</li>
 									<li>• Hutan produksi</li>
 								</ul>
@@ -142,7 +146,7 @@ export default function WilayahPage() {
 									Batas Sebelah Utara
 								</h3>
 								<p className="text-gray-700 text-center">
-									Desa Ngantang
+									Desa Mulyorejo
 								</p>
 							</div>
 
@@ -160,7 +164,7 @@ export default function WilayahPage() {
 									Batas Sebelah Barat
 								</h3>
 								<p className="text-gray-700 text-center">
-									Desa Sukoanyar
+									Desa Banjarejo
 								</p>
 							</div>
 
@@ -169,7 +173,7 @@ export default function WilayahPage() {
 									Batas Sebelah Timur
 								</h3>
 								<p className="text-gray-700 text-center">
-									Desa Pandansari
+									Desa Bendosari
 								</p>
 							</div>
 						</div>
@@ -180,42 +184,35 @@ export default function WilayahPage() {
 						<h2 className="text-2xl font-semibold text-green-600 mb-6">
 							Penggunaan Lahan
 						</h2>
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+							
 							<div className="text-center p-4 bg-green-100 rounded-lg">
 								<div className="text-2xl font-bold text-green-700">
-									45%
+									269,7 hektar
 								</div>
 								<div className="text-sm text-gray-700">
 									Sawah & Ladang
 								</div>
 							</div>
 
+							<div className="text-center p-4 bg-gray-100 rounded-lg">
+								<div className="text-2xl font-bold text-gray-700">
+									312 hektar
+								</div>
+								<div className="text-sm text-gray-700">
+									Total Lahan
+								</div>
+							</div>
 							<div className="text-center p-4 bg-blue-100 rounded-lg">
 								<div className="text-2xl font-bold text-blue-700">
-									25%
+									42,3 hektar
 								</div>
 								<div className="text-sm text-gray-700">
 									Pemukiman
 								</div>
 							</div>
+							
 
-							<div className="text-center p-4 bg-yellow-100 rounded-lg">
-								<div className="text-2xl font-bold text-yellow-700">
-									20%
-								</div>
-								<div className="text-sm text-gray-700">
-									Hutan & Kebun
-								</div>
-							</div>
-
-							<div className="text-center p-4 bg-gray-100 rounded-lg">
-								<div className="text-2xl font-bold text-gray-700">
-									10%
-								</div>
-								<div className="text-sm text-gray-700">
-									Lainnya
-								</div>
-							</div>
 						</div>
 					</div>
 
@@ -265,47 +262,6 @@ export default function WilayahPage() {
 							</div>
 						</div>
 
-						<div>
-							<h2 className="text-2xl font-semibold text-green-600 mb-4">
-								Topografi
-							</h2>
-							<div className="bg-green-50 p-6 rounded-lg">
-								<ul className="space-y-3 text-gray-700">
-									<li className="flex items-center space-x-2">
-										<span className="text-green-600">
-											⛰️
-										</span>
-										<span>Dataran tinggi pegunungan</span>
-									</li>
-									<li className="flex items-center space-x-2">
-										<span className="text-green-600">
-											🏔️
-										</span>
-										<span>
-											Lereng Gunung Arjuno-Welirang
-										</span>
-									</li>
-									<li className="flex items-center space-x-2">
-										<span className="text-green-600">
-											🌾
-										</span>
-										<span>Tanah vulkanis subur</span>
-									</li>
-									<li className="flex items-center space-x-2">
-										<span className="text-green-600">
-											💧
-										</span>
-										<span>Sumber air pegunungan</span>
-									</li>
-									<li className="flex items-center space-x-2">
-										<span className="text-green-600">
-											🌿
-										</span>
-										<span>Kemiringan 5-25%</span>
-									</li>
-								</ul>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

@@ -20,9 +20,16 @@ export default function Home() {
 			},
 		},
 	};
+	// const { scrollYProgress } = useScroll();
+	// const rotate = useTransform(scrollYProgress, [0, 1], [0, 72000]);
+  	// // Scale down speed: starts big, slows down towards 1
+  	// const scale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+  	// // Zoom in and out effect (oscillation)
+  	// const zoom = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.3, 1]);
 
 	return (
 		<div>
+
 			{/* Hero Section */}
 			<Hero />
 
@@ -224,39 +231,36 @@ export default function Home() {
 
 			{/* Call to Action */}
 			<section className="py-16 bg-gradient-to-r from-green-600 to-emerald-600">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-					<motion.div
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: true }}
-						variants={fadeInUp}
-						transition={{ duration: 0.6 }}>
-						<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-							Kunjungi Desa Purworejo
-						</h2>
-						<p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-							Rasakan kehangatan masyarakat desa dan keindahan
-							alam yang tak terlupakan
-						</p>
-						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<motion.a
-								href="/transportasi"
-								className="bg-white text-green-600 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg"
-								whileHover={{ scale: 1.05, y: -2 }}
-								whileTap={{ scale: 0.95 }}>
-								Info Transportasi
-							</motion.a>
-							<motion.a
-								href="/pelayanan"
-								className="border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-all duration-300"
-								whileHover={{ scale: 1.05, y: -2 }}
-								whileTap={{ scale: 0.95 }}>
-								Layanan Desa
-							</motion.a>
-						</div>
-					</motion.div>
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8">
+					<div className="flex flex-col justify-center items-center">
+						<motion.div
+							initial="hidden"
+							whileInView="visible"
+							viewport={{ once: true }}
+							variants={fadeInUp}
+							transition={{ duration: 0.6 }}>
+							<h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+								Kunjungi Desa Purworejo
+							</h2>
+							<p className="text-lg text-green-100 mb-8 max-w-2xl">
+								Rasakan kehangatan masyarakat desa dan keindahan
+								alam yang tak terlupakan
+							</p>
+							<div className="flex flex-col sm:flex-row gap-4">
+								<motion.a
+									href="/pelayanan"
+									className="border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-all duration-300"
+									whileHover={{ scale: 1.05, y: -2 }}
+									whileTap={{ scale: 0.95 }}>
+									Layanan Desa
+								</motion.a>
+							</div>
+						</motion.div>
+					</div>
+					<div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5086.622432106931!2d112.38055852392942!3d-7.886487538593051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788946a9783375%3A0xcd8a80a7c3d32c39!2sKantor%20Desa%20Purworejo!5e0!3m2!1sid!2sid!4v1758430594452!5m2!1sid!2sid" width="600" height="450" className="border:0;" loading="lazy"  ></iframe>
+					</div>
 				</div>
-			</section>
+			</section> 
 		</div>
-	);
-}
+)}

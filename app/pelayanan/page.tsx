@@ -132,7 +132,7 @@ export default function PelayananPage() {
 							<div className="bg-white/20 p-4 rounded-xl backdrop-blur-sm">
 								<p className="font-medium text-lg">Jumat</p>
 								<p className="text-green-100">
-									08:00 - 14:30 WIB
+									08:00 - 11:30 WIB
 								</p>
 							</div>
 						</div>
@@ -255,7 +255,7 @@ export default function PelayananPage() {
 									/>
 								</svg>
 								<span className="text-gray-700">
-									(0341) 123-4567
+									<a href="https://wa.me/6281249260276">+62 8124-9260-276</a>
 								</span>
 							</div>
 							<div className="flex items-center justify-center">
@@ -271,10 +271,12 @@ export default function PelayananPage() {
 										d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
 									/>
 								</svg>
-								<span className="text-gray-700">
-									desa.purworejo@malangkab.go.id
-								</span>
-							</div>
+								<a href="mailto:purworejo810@gmail.com">
+									<span className="text-gray-700" >
+										purworejo810@gmail.com
+									</span>
+								</a>
+							</div> 
 						</div>
 					</motion.div>
 				</motion.div>
