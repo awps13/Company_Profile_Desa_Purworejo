@@ -121,7 +121,7 @@ const Hero = () => {
 
 				<motion.button
 					onClick={scrollToProfile}
-					className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-2xl border border-white/20 backdrop-blur-sm"
+					className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-2xl border border-white/20 backdrop-blur-sm hover:cursor-pointer"
 					initial={{ opacity: 0, scale: 0.8 }}
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.6, delay: 0.8 }}

@@ -71,13 +71,7 @@ const Footer = () => {
 									Syarat Adminduk
 								</Link>
 							</li>
-							<li>
-								<Link
-									href="/transportasi"
-									className="text-gray-300 hover:text-white transition-colors">
-									Transportasi
-								</Link>
-							</li>
+							
 							<li>
 								<Link
 									href="/lembaga/karang-taruna"

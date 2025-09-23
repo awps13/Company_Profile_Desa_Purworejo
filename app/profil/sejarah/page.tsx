@@ -59,129 +59,26 @@ export default function SejarahPage() {
 								Sejarah Kepemimpinan Desa
 							</h3>
 							<p className="text-gray-700 leading-relaxed">
-								Selama masa kolonial, Desa Purworejo menjadi
-								salah satu daerah penghasil produk pertanian.
-								Sistem tanam paksa (cultuurstelsel) mempengaruhi
-								pola pertanian masyarakat, namun juga
-								memperkenalkan teknik-teknik pertanian baru.
+								Pemerintahan desa Purworejo dipimpin oleh Kepala Desa / Aries, mulai berdiri sejak tahun 1935 atas perintah penjajah Belanda desa-desa tersebut digabung menjadi sebuah desa yaitu Purworejo, dan Kepala Desa tersebut dipilih langsung masyarakat setempat
+								Adapun Kepala Desa yang pernah memimpin di Desa Purworejo Adalah:
+								<br />
+								1. Bapak Garbun (1922)
+								<br />
+								2. Bapak Supangkat (1935)
+								<br />
+								3. Bapak Martoredjo (1958-1968)
+								<br />
+								4. Bapak Djafar Soeyanto (1970-1988)
+								<br />
+								5. Bapak M Harminto (1989-2007)
+								<br />
+								6. Bapak Yulianto (2007-2013)
+								<br />
+								7. Bapak Siswaji (2013-2019)
+								<br />
+								8. Bapak Siswaji (2019-2025)
 							</p>
 						</div>
-
-						<div className="border-l-4 border-green-600 pl-6">
-							<h3 className="text-xl font-semibold text-gray-900 mb-2">
-								Era Kemerdekaan (1945-sekarang)
-							</h3>
-							<p className="text-gray-700 leading-relaxed">
-								Setelah kemerdekaan Indonesia, Desa Purworejo
-								terus berkembang sebagai desa agraris.
-								Pembangunan infrastruktur, pendidikan, dan
-								kesehatan terus dilakukan untuk meningkatkan
-								kesejahteraan masyarakat.
-							</p>
-						</div>
-
-						<div className="border-l-4 border-green-600 pl-6">
-							<h3 className="text-xl font-semibold text-gray-900 mb-2">
-								Era Modern (2000-sekarang)
-							</h3>
-							<p className="text-gray-700 leading-relaxed">
-								Memasuki era modern, Desa Purworejo mulai
-								mengembangkan sektor pariwisata dan ekonomi
-								kreatif. Budidaya bawang merah menjadi komoditas
-								unggulan yang dikenal hingga ke luar daerah.
-							</p>
-						</div>
-					</div>
-
-					{/* Cultural Heritage */}
-					<div className="mt-12">
-						<h2 className="text-2xl font-semibold text-green-600 mb-6">
-							Warisan Budaya
-						</h2>
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-							<div className="bg-gray-50 p-6 rounded-lg">
-								<h4 className="text-lg font-semibold text-gray-900 mb-3">
-									Tradisi Gotong Royong
-								</h4>
-								<p className="text-gray-700">
-									Semangat gotong royong telah mengakar kuat
-									dalam kehidupan masyarakat Desa Purworejo
-									sejak zaman dahulu dan masih dilestarikan
-									hingga kini.
-								</p>
-							</div>
-
-							<div className="bg-gray-50 p-6 rounded-lg">
-								<h4 className="text-lg font-semibold text-gray-900 mb-3">
-									Pertanian Tradisional
-								</h4>
-								<p className="text-gray-700">
-									Teknik pertanian yang diwariskan
-									turun-temurun, khususnya dalam budidaya
-									bawang merah, menjadi identitas khas desa
-									ini.
-								</p>
-							</div>
-
-							<div className="bg-gray-50 p-6 rounded-lg">
-								<h4 className="text-lg font-semibold text-gray-900 mb-3">
-									Seni dan Budaya
-								</h4>
-								<p className="text-gray-700">
-									Berbagai seni tradisional seperti kesenian
-									Jawa masih dipelihara dan ditampilkan dalam
-									acara-acara adat dan perayaan desa.
-								</p>
-							</div>
-
-							<div className="bg-gray-50 p-6 rounded-lg">
-								<h4 className="text-lg font-semibold text-gray-900 mb-3">
-									Kuliner Khas
-								</h4>
-								<p className="text-gray-700">
-									Makanan tradisional yang menggunakan
-									bahan-bahan lokal, termasuk olahan dari
-									bawang merah sebagai komoditas unggulan.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					{/* Fun Facts */}
-					<div className="mt-12 bg-green-50 p-6 rounded-lg">
-						<h3 className="text-xl font-semibold text-green-600 mb-4">
-							Fakta Menarik
-						</h3>
-						<ul className="space-y-2 text-gray-700">
-							<li className="flex items-center space-x-2">
-								<span className="text-green-600">•</span>
-								<span>
-									Desa Purworejo telah ada selama lebih dari
-									300 tahun
-								</span>
-							</li>
-							<li className="flex items-center space-x-2">
-								<span className="text-green-600">•</span>
-								<span>
-									Bawang merah Purworejo dikenal kualitasnya
-									hingga ke luar Jawa
-								</span>
-							</li>
-							<li className="flex items-center space-x-2">
-								<span className="text-green-600">•</span>
-								<span>
-									Desa ini memiliki tradisi &quot;Bersih
-									Desa&quot; yang diadakan setiap tahun
-								</span>
-							</li>
-							<li className="flex items-center space-x-2">
-								<span className="text-green-600">•</span>
-								<span>
-									Sistem irigasi tradisional masih digunakan
-									untuk mengairi sawah
-								</span>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
