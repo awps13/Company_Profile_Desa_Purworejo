@@ -232,7 +232,7 @@ export default function WilayahPage() {
 					</div>
 
 					{/* Climate & Topography */}
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+					{/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 						<div>
 							<h2 className="text-2xl font-semibold text-green-600 mb-4">
 								Kondisi Iklim
@@ -276,7 +276,7 @@ export default function WilayahPage() {
 								</ul>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
