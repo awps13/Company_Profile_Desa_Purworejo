@@ -18,10 +18,10 @@ export default function SejarahPage() {
 					{/* Hero Image */}
 					<div className="relative h-64 md:h-80 rounded-lg overflow-hidden mb-8">
 						<Image
-							src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2946&auto=format&fit=crop"
+							src="/forSejarah.png"
 							alt="Historical Village Scene"
 							fill
-							className="object-cover"
+							className="w-full h-full object-cover"
 						/>
 					</div>
 

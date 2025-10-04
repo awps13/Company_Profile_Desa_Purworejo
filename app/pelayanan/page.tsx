@@ -25,7 +25,6 @@ export default function PelayananPage() {
 			title: "Surat Keterangan Domisili",
 			description:
 				"Surat keterangan tempat tinggal untuk berbagai keperluan administratif",
-			time: "1 hari kerja",
 			color: "from-blue-500 to-blue-600",
 			bg: "bg-blue-50",
 		},
@@ -34,7 +33,6 @@ export default function PelayananPage() {
 			title: "Surat Keterangan Usaha",
 			description:
 				"Surat keterangan untuk mendukung perizinan usaha dan kegiatan ekonomi",
-			time: "1 hari kerja",
 			color: "from-green-500 to-green-600",
 			bg: "bg-green-50",
 		},
@@ -43,7 +41,6 @@ export default function PelayananPage() {
 			title: "Surat Keterangan Tidak Mampu",
 			description:
 				"Surat keterangan untuk bantuan sosial dan keringanan biaya pendidikan/kesehatan",
-			time: "2 hari kerja",
 			color: "from-yellow-500 to-yellow-600",
 			bg: "bg-yellow-50",
 		},
@@ -52,16 +49,18 @@ export default function PelayananPage() {
 			title: "Surat Keterangan Kelahiran",
 			description:
 				"Surat keterangan kelahiran untuk pengurusan akta kelahiran",
-			time: "1 hari kerja",
+			subTitle: "Persyaratan",
+			persyaratan: "Surat Pengantar dari RT, KK Asli dan Fotocopy, KTP Asli Pelapor, KTP Saksi (Fotocopy) 2 Orang, Materai 10.000 (2), Surat Kelahiran dari Bidan/Dokter, Buku Nikah Orang Tua",
 			color: "from-purple-500 to-purple-600",
 			bg: "bg-purple-50",
 		},
 		{
-			icon: "💍",
-			title: "Surat Keterangan Belum Menikah",
+			icon: "👨‍👩‍👧‍👦",
+			title: "Surat Keterangan Kartu Keluarga Baru",
 			description:
-				"Surat keterangan status pernikahan untuk keperluan administrasi",
-			time: "1 hari kerja",
+				"Dokumen resmi dari desa untuk permohonan pembuatan KK baru.",
+			subTitle: "Persyaratan",
+			persyaratan: "Surat Pengantar dari RT, KK, Surat Kelahiran dari Bidan/Dokter, Buku Nikah, Jika ada elemen data yang ingin diubah mohon sertakan bukti perubahan (Misal: Ganti Status Pendidikan artinya harus melampirkan Ijazah Terakhir)",
 			color: "from-pink-500 to-pink-600",
 			bg: "bg-pink-50",
 		},
@@ -70,7 +69,8 @@ export default function PelayananPage() {
 			title: "Surat Keterangan Kematian",
 			description:
 				"Surat keterangan kematian untuk pengurusan akta kematian",
-			time: "1 hari kerja",
+			subTitle: "Persyaratan",
+			persyaratan: "Surat Pengantar dari RT, KK Asli dan Fotocopy, KTP Asli Pelapor, KTP Saksi (Fotocopy) 2 Orang, Materai 10.000 (2), Buku Nikah Subjek (Jika yang meninggal adalah kepala keluarga)",
 			color: "from-gray-500 to-gray-600",
 			bg: "bg-gray-50",
 		},
@@ -172,22 +172,12 @@ export default function PelayananPage() {
 										<p className="text-gray-600 mb-6 leading-relaxed">
 											{service.description}
 										</p>
-										<div
-											className={`inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r ${service.color} text-white text-sm font-medium`}>
-											<svg
-												className="w-4 h-4 mr-2"
-												fill="none"
-												stroke="currentColor"
-												viewBox="0 0 24 24">
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth={2}
-													d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-												/>
-											</svg>
-											{service.time}
-										</div>
+										<h3 className="text-xl font-bold text-gray-900 mb-4">
+											{service.subTitle}
+										</h3>
+										<p className="text-gray-600 mb-6 leading-relaxed">
+											{service.persyaratan}
+										</p>
 									</div>
 								</motion.div>
 							))}
@@ -200,7 +190,7 @@ export default function PelayananPage() {
 						variants={fadeInUp}
 						transition={{ duration: 0.6, delay: 0.6 }}>
 						<h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
-							Persyaratan Umum
+							Persyaratan Umum 
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 							{requirements.map((req, index) => (

@@ -8,20 +8,20 @@ const Hero = () => {
 	// Array of background images
 	const backgroundImages = [
 		{
-			src: "https://images.unsplash.com/photo-1530878902700-5ad4f9e4c318?q=80&w=3661&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-			alt: "Indonesian Village Landscape - Rice Fields",
+			src: "/jalan_purworejo.jpg",
+			alt: "Jalan Purworejo",
 		},
 		{
-			src: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
-			alt: "Beautiful Village Scenery",
+			src: "/gapura.jpg",
+			alt: "Gapura Desa",
 		},
 		{
-			src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3",
-			alt: "Green Rice Terraces",
+			src: "/upView.jpg",
+			alt: "up view purworejo",
 		},
 		{
-			src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
-			alt: "Mountain Village View",
+			src: "/bottomView.jpg",
+			alt: "bottom view purworejo",
 		},
 	];
 
@@ -52,7 +52,7 @@ const Hero = () => {
 	return (
 		<section className="relative h-dvh flex items-center justify-center overflow-hidden -mt-16">
 			{/* Background Images Slideshow */}
-			<div className="absolute inset-0 z-0">
+			<div className="absolute inset-0 z-0 ">
 				{backgroundImages.map((image, index) => (
 					<motion.div
 						key={index}
@@ -67,7 +67,7 @@ const Hero = () => {
 							src={image.src}
 							alt={image.alt}
 							fill
-							className="object-cover"
+							className="w-full h-full object-cover"
 							priority={index === 0}
 						/>
 					</motion.div>

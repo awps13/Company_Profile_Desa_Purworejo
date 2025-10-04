@@ -153,69 +153,11 @@ const Navbar = () => {
 							Pelayanan
 						</Link>
 
-						
-
-						{/* Organizations Dropdown */}
-						<div className="relative">
-							<button
-								onClick={() => toggleDropdown("lembaga")}
-								className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-all duration-300 flex items-center hover:bg-green-50 rounded-lg">
-								Lembaga
-								<motion.svg
-									className="ml-1 h-4 w-4"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-									animate={{
-										rotate:
-											activeDropdown === "lembaga"
-												? 180
-												: 0,
-									}}
-									transition={{ duration: 0.2 }}>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M19 9l-7 7-7-7"
-									/>
-								</motion.svg>
-							</button>
-							<AnimatePresence>
-								{activeDropdown === "lembaga" && (
-									<motion.div
-										className="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl py-2 z-10 border border-green-100"
-										variants={dropdownVariants}
-										initial="hidden"
-										animate="visible"
-										exit="exit"
-										transition={{ duration: 0.2 }}>
-										<Link
-											href="/lembaga/karang-taruna"
-											className="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors duration-200"
-											onClick={() =>
-												setActiveDropdown(null)
-											}>
-											Karang Taruna
-										</Link>
-										<Link
-											href="/lembaga/komunitas-bawang-merah"
-											className="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors duration-200"
-											onClick={() =>
-												setActiveDropdown(null)
-											}>
-											Komunitas Bawang Merah
-										</Link>
-									</motion.div>
-								)}
-							</AnimatePresence>
-						</div>
-
-						<Link
+						{/* <Link
 							href="/syarat-adminduk"
 							className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-all duration-300 hover:bg-green-50 rounded-lg">
 							Syarat Adminduk
-						</Link>
+						</Link> */}
 					</motion.div>
 
 					{/* Mobile menu button */}
@@ -307,32 +249,13 @@ const Navbar = () => {
 									onClick={() => setIsOpen(false)}>
 									Pelayanan
 								</Link>
-								
 
-								<div className="space-y-1">
-									<span className="block px-3 py-2 text-gray-900 font-medium">
-										Lembaga
-									</span>
-									<Link
-										href="/lembaga/karang-taruna"
-										className="block px-6 py-2 text-sm text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200"
-										onClick={() => setIsOpen(false)}>
-										Karang Taruna
-									</Link>
-									<Link
-										href="/lembaga/komunitas-bawang-merah"
-										className="block px-6 py-2 text-sm text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200"
-										onClick={() => setIsOpen(false)}>
-										Komunitas Bawang Merah
-									</Link>
-								</div>
-
-								<Link
+								{/* <Link
 									href="/syarat-adminduk"
 									className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200"
 									onClick={() => setIsOpen(false)}>
 									Syarat Adminduk
-								</Link>
+								</Link> */}
 							</div>
 						</motion.div>
 					)}

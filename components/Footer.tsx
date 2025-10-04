@@ -62,30 +62,31 @@ const Footer = () => {
 
 					{/* Services */}
 					<div>
-						<h4 className="text-lg font-semibold mb-4">Layanan</h4>
+						<h4 className="text-lg font-semibold mb-4">Kontak </h4>
 						<ul className="space-y-2">
 							<li>
 								<Link
-									href="/syarat-adminduk"
+									href="https://www.instagram.com/pemdes_purworejo_ngantang/"
 									className="text-gray-300 hover:text-white transition-colors">
-									Syarat Adminduk
+									Instagram
+								</Link>
+							</li>
+							<li>
+								<Link
+									href="https://wa.me/6281249260276"
+									className="text-gray-300 hover:text-white transition-colors">
+									Whatsapp
+								</Link>
+							</li>
+							<li>
+								<Link
+									href="mailto:purworejo810@gmail.com"
+									className="text-gray-300 hover:text-white transition-colors">
+									Email
 								</Link>
 							</li>
 							
-							<li>
-								<Link
-									href="/lembaga/karang-taruna"
-									className="text-gray-300 hover:text-white transition-colors">
-									Karang Taruna
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="/lembaga/komunitas-bawang-merah"
-									className="text-gray-300 hover:text-white transition-colors">
-									Komunitas Bawang Merah
-								</Link>
-							</li>
+							
 						</ul>
 					</div>
 				</div>

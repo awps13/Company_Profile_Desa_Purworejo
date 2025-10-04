@@ -98,10 +98,10 @@ const economicPotentials = [
 			color: "from-gray-400/50 to-gray-600/50",
 		},
 		{
-			title: "Berkebun",
+			title: "Pucuk Mentelung",
 			image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
 			description:
-				"Wisata berkebun berupa petik jeruk, alpukat, lombok, serta panen kubis) yang dapat dikunjungi pada bulan panen",
+				"Pucuk Mentelung adalah sebuah puncak di Desa Purworejo, Kecamatan Ngantang yang menawarkan panorama alam pegunungan yang menenangkan.",
 			color: "from-gray-400/50 to-gray-600/50",
 		},
 	];

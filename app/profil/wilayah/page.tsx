@@ -6,7 +6,22 @@ export const metadata: Metadata = {
 	description: "Informasi geografis dan wilayah administratif Desa Purworejo",
 };
 
+export async function GET() {
+  const lat = -7.864;
+  const lon = 112.414;
+  const apiKey = process.env.OPENWEATHER_API_KEY; // TANPA NEXT_PUBLIC biar rahasia
+
+  const res = await fetch(
+	`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=id`
+  );
+  const data = await res.json();
+  console.log(data)
+
+}
+
 export default function WilayahPage() {
+	
+	
 	return (
 		<div className="min-h-dvh bg-gray-50 py-12">
 			<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -261,7 +276,6 @@ export default function WilayahPage() {
 								</ul>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
